@@ -2,7 +2,7 @@
 search bar - user input where the want to park
 list of postings
 postings
-largeposting, next and prev images
+large posting, next and prev images
 
 
 /clarence
