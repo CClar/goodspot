@@ -17,7 +17,7 @@ export default class Listposting extends Component {
         month = {contact.month}
         day = {contact.day}   
         />
-    ))
+    ));
    } 
   }
 
@@ -30,9 +30,8 @@ export default class Listposting extends Component {
     return (
       <div>
           {users}
-         }
       </div>
-    );
+    )
 }
 
 
