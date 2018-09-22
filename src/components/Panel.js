@@ -6,14 +6,14 @@ export default class Panel extends Component {
   }
   render() {
     return (
-      <div>
+      <li>
         <p>Date</p>
         <p>Distance</p>
         backgroundImg<img alt="backgroundImg" src="" />{/*TODO: Add Image*/}
         <p>{`Cost per hr of Parking`}</p>
         <p>{`year-month-day, distance away`}</p>
         <p>{'StartTime-EndTime'}</p>
-      </div>
+      </li>
     );
   }
 }

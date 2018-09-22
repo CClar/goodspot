@@ -9,19 +9,19 @@ export default class PanelList extends Component {
     }
   }
   componentDidMount() {
-    // TODO: Put endpoint
+    // TODO: Put endpoint william please help us
     fetch('TODO: URL').then(response => {
       console.log(JSON.stringify(response.json));
     });
   }
   render() {
     return (
-      <div>{
+      <ul>{
         this.state.panels.map(function (element) {
           return <Panel pAddress={''} pDate={''} pDistance={''} pImg={''} pCost={''} date={''} />
         }, this)
       }
-      </div>
+      </ul>
     );
   }
 }
