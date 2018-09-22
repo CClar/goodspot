@@ -6,9 +6,9 @@ large posting, next and prev images
 
 
 /clarence
-bookingform, customer, phone, email, liscense plate, pay
+bookingform, customer, phone, email, license plate, pay
 
-filterbar, filter search/data recieved
+filterbar, filter search/data recieved on change
 
 -date, distance
 -background picture
