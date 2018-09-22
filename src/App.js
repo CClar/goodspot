@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import PanelList from './components/PanelList';
+import FilterBar from './components/FilterBar';
 
 class App extends Component {
   render() {
     return (
     <div>
-      <PanelList/>
+      <FilterBar/>
     </div>
     );
   }
