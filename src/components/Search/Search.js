@@ -24,7 +24,7 @@ export default class Search extends Component {
         <div className="search-box">
           <input
             type ="text"
-            placeholder="Input place"
+            placeholder="Enter location"
             autoFocus={true}
             value={this.state.userInput}
             onChange={this.handleSearchTextChange}
