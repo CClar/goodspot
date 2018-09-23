@@ -9,13 +9,35 @@ export default class PostingList extends Component {
   }
 
   componentDidMount() {
+    const { address } = this.props.location.state;
+    const url = 'https://calm-basin-51790.herokuapp.com/testdistance';
     
+    fetch(url, {
+      method: 'POST',
+      body: { address },
+      mode: 'cors'
+    })
+    .then((response) =>  response.json())
+    .then((data) => {
+      this.setState({
+        postings: data
+      });
+      // console.log(data);
+    })
+    .catch((error) => {
+      console.log('Request failed', error);
+    });
   }
 
   render() {
+    const postings = this.state.postings;
     return (
-      <div>
-        List of postings
+      <div className="PostingList">
+        <ul>
+          {postings.map((posting, i) => {
+            return <li key={i}>{posting.Address}</li>
+          })}
+        </ul>
       </div>
     );
   }
