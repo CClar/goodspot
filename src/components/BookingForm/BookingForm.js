@@ -54,27 +54,34 @@ export default class BookingForm extends Component {
       <div className="BookingForm">
         <h2>Book this slot now</h2>
         <form onSubmit={this.submit}>
-          <div className="form-row">
-            <label>Name: </label>
-            <input id="name" type="text" name="name" ref={(node) => this.userName = node} />
-          </div>
-          <div className="form-row">
-            <label>Email: </label>
-            <input id="email" type="text" name="email" ref={(node) => this.userEmail = node} />
-          </div>
-          <div className="form-row">
-            <label>Phone: </label>
-            <input id="phone" type="text" name="phone" ref={(node) => this.userPhone = node} />
-          </div>
-          <div className="form-row">
-            <label>License Plate: </label>
-            <input id="license" type="text" name="license" ref={(node) => this.userLicensePlate = node} />
-          </div>
-          <div className="form-row">
-            <label>Date: </label>
-            <input id="bookDate" type="date" name="bookDate" ref={(node) => this.bookDate = node} />
-          </div>
-          <input type="submit" value="Submit" />
+          <table>
+            <tr className="form-row">
+              <td>Name</td>
+              <td><input id="name" type="text" name="name" ref={(node) => this.userName = node} /></td>
+            </tr>
+
+            <tr className="form-row">
+              <td>Email</td>
+              <td><input id="email" type="text" name="email" ref={(node) => this.userEmail = node} /></td>
+            </tr>
+
+            <tr className="form-row">
+              <td>Phone</td>
+              <td><input id="phone" type="text" name="phone" ref={(node) => this.userPhone = node} /></td>
+            </tr>
+
+            <tr className="form-row">
+              <td>License Plate</td>
+              <td><input id="license" type="text" name="license" ref={(node) => this.userLicensePlate = node} /></td>
+            </tr>
+
+            <tr className="form-row">
+              <td>Date</td>
+              <td><input id="bookDate" type="date" name="bookDate" ref={(node) => this.bookDate = node} /></td>
+            </tr>
+          </table>
+
+          <input type="submit" value="Submit" className="form-submit" />
         </form>
       </div>
     );

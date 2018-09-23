@@ -77,7 +77,7 @@ export default class PostingList extends Component {
                 }} className="posting">
                   <h2>{posting.Address}</h2>
                   <p>Price: ${posting.Price.toFixed(2)}</p>
-                  <p>Availability:<br></br>{fromTime} - {toTime}</p>
+                  <p>Availability:<br></br>{fromTime}:00 - {toTime}:00</p>
                 </Link>
               </li>
             );

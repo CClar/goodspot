@@ -20,21 +20,24 @@ export default class Search extends Component {
   render() {
     return (
       <div className="Search">
-        <input
-          type ="text"
-          placeholder="Input place"
-          autoFocus={true}
-          value={this.state.userInput}
-          onChange={this.handleSearchTextChange}
-        />
-        <Link to={{
-          pathname: '/postings',
-          state: {
-            address: this.state.userInput
-          }
-        }}>
-          Search
-        </Link>
+        <h1>GoodSp●t</h1>
+        <div className="search-box">
+          <input
+            type ="text"
+            placeholder="Input place"
+            autoFocus={true}
+            value={this.state.userInput}
+            onChange={this.handleSearchTextChange}
+          />
+          <Link to={{
+            pathname: '/postings',
+            state: {
+              address: this.state.userInput
+            }
+          }}>
+            Search
+          </Link>
+        </div>
       </div>
     )
   }
