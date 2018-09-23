@@ -1,0 +1,14 @@
+.BookingForm {
+    width: 60%;
+    margin: 80px auto 60px auto;
+}
+
+
+.BookingForm .form-row {
+    margin-bottom: 10px;
+}
+
+.BookingForm .form-row label {
+    margin-left: 5px;
+    margin-right: 5px;
+}

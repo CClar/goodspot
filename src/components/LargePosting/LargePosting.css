@@ -2,14 +2,9 @@
     display: inline-block;
     width: 100%;
     height: 500px;
-    background-color: lightcoral;
     text-align: center;
     outline: none;
     overflow: hidden;
-}
-
-.LargePosting .carousel .carousel-item-1 {
-    background-color: deepskyblue;
 }
 
 .LargePosting .carousel div img {
@@ -27,4 +22,9 @@
 
 .LargePosting .content-container .price {
     text-decoration: underline;
+}
+
+.LargePosting .booking-form-container {
+    margin-top: 80px;
+    margin-bottom: 60px;
 }

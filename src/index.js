@@ -7,6 +7,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 import PostingList from './components/PostingList/PostingList';
 import LargePosting from './components/LargePosting/LargePosting';
+import Confirmation from './components/Confirmation/Confirmation';
 
 ReactDOM.render(
     <HashRouter>
@@ -14,6 +15,7 @@ ReactDOM.render(
             <Route exact path='/' component={App}>></Route>
             <Route path='/postings' component={PostingList}>></Route>
             <Route path='/posting' component={LargePosting}>></Route>
+            <Route path='/confirmation' component={Confirmation}></Route>
         </Switch>
     </HashRouter>,
     document.getElementById('root')

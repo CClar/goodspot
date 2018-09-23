@@ -20,7 +20,6 @@ export default class PostingList extends Component {
     const { address } = this.props.location.state;
     // const address = '4800 Yonge Street';
     const url = 'https://calm-basin-51790.herokuapp.com/testdistance';
-    console.log(typeof this.state.distanceFromLocation);
 
     fetch(url, {
       method: 'POST',
