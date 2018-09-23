@@ -18,18 +18,18 @@ export default class LargePosting extends Component {
       slidesToShow: 1,
       slidesToScroll: 1
     };
-    // const { post } = this.props.location.state;
+    const { post } = this.props.location.state;
 
-    const post = {
-      Address: "4848 Yonge St, North York",
-      Available: true,
-      FromTime: "2018-10-01T09:00:00.000Z",
-      PostalCode: "M2N 5N2",
-      PostingId: 1234,
-      Price: 10,
-      Title: "Good stop in North York. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.",
-      ToTime: "2018-10-01T17:00:00.000Z"
-    }
+    // const post = {
+    //   Address: "4848 Yonge St, North York",
+    //   Available: true,
+    //   FromTime: "2018-10-01T09:00:00.000Z",
+    //   PostalCode: "M2N 5N2",
+    //   PostingId: 1234,
+    //   Price: 10,
+    //   Title: "Good stop in North York. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.",
+    //   ToTime: "2018-10-01T17:00:00.000Z"
+    // }
 
     return (
       <div className="LargePosting">
