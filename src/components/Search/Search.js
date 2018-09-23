@@ -10,10 +10,6 @@ export default class Search extends Component {
       userInput: ''
     };
   }
-  
-  handleSearchSubmit = (e) => {
-    e.preventDefault();
-  }
 
   handleSearchTextChange = (e) => {
     this.setState({
@@ -26,13 +22,18 @@ export default class Search extends Component {
       <div className="Search">
         <input
           type ="text"
-          placeholder="Search"
+          placeholder="Input place"
           autoFocus={true}
           value={this.state.userInput}
           onChange={this.handleSearchTextChange}
         />
-        <Link to='/postings'>
-          {'>'}
+        <Link to={{
+          pathname: '/postings',
+          state: {
+            address: this.state.userInput
+          }
+        }}>
+          Search
         </Link>
       </div>
     )

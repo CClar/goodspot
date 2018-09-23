@@ -4,13 +4,12 @@ export default class PostingList extends Component {
   constructor(props){
     super(props);
     this.state = {
-      year: 0,
-      month: 0,
-      day: 0
+      postings: []
     }
   }
 
   componentDidMount() {
+    
   }
 
   render() {
